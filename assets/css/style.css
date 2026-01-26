@@ -133,3 +133,13 @@ body {
     border-bottom: 1.5px solid;
 border-image-source: linear-gradient(90deg, #D97DCC 0%, #9542FF 64.6%);
 }
+.user-status::after{
+    content: '';
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    position: absolute;
+    right: 1px;
+    top: 22px;
+}
