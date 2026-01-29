@@ -111,19 +111,25 @@ body {
         background: linear-gradient(180.43deg, rgba(0, 0, 0, 0) 0.37%, rgba(0, 0, 0, 0.9) 50%);
 }
 .shadow-engagement{
-   box-shadow: 0px 0px 7.2px 0px #FFB08D inset;
+   background-color: #014923;
+      box-shadow: inset 0px 0px 7.2px 0px rgba(4, 142, 68, 1);
+
 }
 .shadow-visibility{
-    box-shadow: 0px 0px 7.2px 0px #048E44 inset;
+    /* box-shadow: 0px 0px 7.2px 0px #048E44 inset; */
+    background-color: #FF5F17;
+      box-shadow: inset 0px 0px 7.2px 0px #FFB08D;
 }
 .shadow-shopping{
-   box-shadow: 0px 0px 7.2px 0px #9450D3 inset;
+    background-color: #3A185A;
+      box-shadow: inset 0px 0px 7.2px 0px #9450D3;
 }
 .shadow-redemptiont{
-   box-shadow: 0px 0px 7.2px 0px #0C5CCC inset;
+     background-color: #0F294E;
+     box-shadow: inset 0px 0px 7.2px 0px #0C5CCC;
 }
 .feature-card-shadow{
-    box-shadow: 0px 0px 9px 0px #9450D3 inset;
+    box-shadow: 0px 0px 9px 0px #0C5CCC inset;
 
 }
 .select-wallet{
