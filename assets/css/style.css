@@ -161,3 +161,8 @@ body {
   right: -2px;
   top: 4px;
 }
+.border-bottom-gradient {
+  border-bottom: 1.5px solid transparent;
+  background:
+    linear-gradient(to right, #D97DCC 0%, #9542FF 65%) border-box;
+}

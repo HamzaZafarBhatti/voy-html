@@ -178,7 +178,7 @@
         <div
             class="p-[2px] rounded-ss-[16px] rounded-se-[35px] rounded-ee-[16px] rounded-es-[35px] bg-gradient-to-b from-[#AF74E5] to-[#61407F]">
             <div
-                class="h-full w-full rounded-ss-[15px] rounded-se-[33px] rounded-ee-[15px] rounded-es-[35px]bg-gradient-to-b from-[#AA52FC] to-[#3A185A]shadow-hero pr-0 overflow-hidden">
+                class="h-full w-full rounded-ss-[15px] rounded-se-[33px] rounded-ee-[15px] rounded-es-[35px] bg-gradient-to-b from-[#AA52FC] to-[#3A185A] shadow-hero pr-0 overflow-hidden">
                 <div class="mb-[11px] pt-[11px] pl-[12px]">
                     <svg width="56" height="17" viewBox="0 0 56 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -245,256 +245,259 @@
     </div>
     <!-- Video Card -->
 
-    <div class="relative text-white mt-2.5 bg-[#320D56] rounded-[30px] overflow-hidden video-section">
-        <span class="pointer-events-none absolute bottom-0 left-0 w-full h-[1.5px]
-   rounded-b-[30px]
-   bg-[linear-gradient(90deg,#D97DCC_0%,#9542FF_64.6%)]">
-        </span>
+    <div class="border-bottom-gradient border-b-2 rounded-[30px] mt-2.5">
+        <div class="relative text-white bg-[#320D56] rounded-[30px] overflow-hidden video-section">
+            <div class="flex items-center justify-between absolute top-0 w-full p-4 z-10">
+                <!-- Left -->
+                <div class="flex items-center gap-[3px]">
+                    <span class="border-[1.18px] border-[#FF4B4B] rounded-full user-status-2 relative">
+                        <img src="https://i.pravatar.cc/40?img=32"
+                            class="w-[25.26px] h-[25.26px] rounded-full border-[1.18px] border-transparent">
+                    </span>
 
-        <div class="flex items-center justify-between absolute top-0 w-full p-4 z-10">
-            <!-- Left -->
-            <div class="flex items-center gap-[3px]">
-                <span class="border-[1.18px] border-[#FF4B4B] rounded-full user-status-2 relative">
+                    <p class="text-[14px] font-bold flex items-center gap-[2px] font-noto-sans text-white">
+                        Jess Baker
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="15" height="15" rx="7.5" fill="white" />
+                            <path
+                                d="M8.18652 6.14355L8.27441 6.43359L8.57812 6.42773L10.9443 6.37988L9.00195 7.73438L8.75391 7.90723L8.85254 8.19336L9.62793 10.4297L7.74121 9.00098L7.5 8.81836L7.25879 9.00098L5.37109 10.4297L6.14746 8.19336L6.24609 7.90723L5.99805 7.73438L4.05469 6.37988L6.42188 6.42773L6.72559 6.43359L6.81348 6.14355L7.5 3.87891L8.18652 6.14355Z"
+                                stroke="#210A38" stroke-width="0.8" />
+                        </svg>
+
+                    </p>
+                </div>
+
+                <!-- Right -->
+                <div class="flex items-center gap-[6px] relative">
+                    <!-- Follow Button -->
+                    <button class="text-[10.83px] rounded-[9px] border border-white font-hind
+                       w-[53px] h-[21px] leading-[21px] text-center">
+                        Follow
+                    </button>
+
+                    <!-- 3 Dots Button -->
+                    <button onclick="toggleMenu(this)" class="w-8 h-8 flex items-center justify-center rounded-full
+                       ">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.74089 9.53556C8.74089 9.97443 9.09666 10.3302 9.53552 10.3302C9.97438 10.3302 10.3301 9.97443 10.3301 9.53556C10.3301 9.0967 9.97438 8.74094 9.53552 8.74094C9.09666 8.74094 8.74089 9.0967 8.74089 9.53556Z"
+                                stroke="white" stroke-width="1.58926" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M8.74089 15.098C8.74089 15.5368 9.09666 15.8926 9.53552 15.8926C9.97438 15.8926 10.3301 15.5368 10.3301 15.098C10.3301 14.6591 9.97438 14.3033 9.53552 14.3033C9.09666 14.3033 8.74089 14.6591 8.74089 15.098Z"
+                                stroke="white" stroke-width="1.58926" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M8.74089 3.97316C8.74089 4.41202 9.09666 4.76778 9.53552 4.76778C9.97438 4.76778 10.3301 4.41202 10.3301 3.97316C10.3301 3.5343 9.97438 3.17853 9.53552 3.17853C9.09666 3.17853 8.74089 3.5343 8.74089 3.97316Z"
+                                stroke="white" stroke-width="1.58926" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div class="hidden absolute right-0 top-10 w-40 rounded-xl bg-[#320D56]
+                       border border-white/20 shadow-lg overflow-hidden dropdown-menu">
+
+                        <button class="w-full text-left px-4 py-2 text-sm hover:bg-white/10">
+                            Report
+                        </button>
+
+                        <button class="w-full text-left px-4 py-2 text-sm hover:bg-white/10">
+                            Block User
+                        </button>
+
+                        <button class="w-full text-left px-4 py-2 text-sm text-red-400 hover:bg-white/10">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Video -->
+            <div class="relative rounded-[30px] overflow-hidden">
+                <!-- Video -->
+                <video id="customVideo" class="w-full h-[382px] object-cover hidden" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+
+                <!-- Thumbnail Image -->
+                <img id="videoThumbnail" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+                    class="w-full h-[382px] object-cover">
+
+                <!-- Play Button -->
+                <div id="playBtnWrapper" class="absolute inset-0 flex items-center justify-center cursor-pointer">
+                    <div class="w-14 h-14 bg-white/30 backdrop-blur rounded-full flex items-center justify-center">
+                        <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="54" height="54" rx="27" stroke="white" />
+                            <path
+                                d="M41.2028 23.9884L34.3767 19.4023L23.254 11.9297C20.8978 10.37 16.8783 11.4874 16.8783 13.7222V28.2252V41.2849C16.8783 43.5197 20.8978 44.6371 23.254 43.0542L41.2028 30.9955C44.0788 29.0866 44.0788 25.9206 41.2028 23.9884Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="absolute bottom-3 left-0 w-full px-4 flex items-center justify-between z-10">
+
+                    <!-- Market / Shop Button -->
+                    <button class="w-9 h-9 flex items-center justify-center rounded-full
+                   bg-[#ebf2ff33] 
+                   hover:scale-105 transition">
+                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.21695 7.02486V10.0806C1.21695 13.1363 2.44197 14.3614 5.49771 14.3614H9.16597C12.2217 14.3614 13.4467 13.1363 13.4467 10.0806V7.02486"
+                                stroke="url(#paint0_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M7.33733 7.55566C8.58276 7.55566 9.50153 6.54162 9.37903 5.29618L8.92985 0.75H5.75161L5.29563 5.29618C5.17313 6.54162 6.09189 7.55566 7.33733 7.55566Z"
+                                stroke="url(#paint1_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M11.6305 7.55566C13.0053 7.55566 14.0125 6.43954 13.8764 5.0716L13.6859 3.20004C13.4409 1.43057 12.7603 0.75 10.9772 0.75H8.90147L9.37787 5.52077C9.49357 6.64371 10.5076 7.55566 11.6305 7.55566Z"
+                                stroke="url(#paint2_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M3.00825 7.55566C4.13119 7.55566 5.14523 6.64371 5.25412 5.52077L5.40385 4.01672L5.73052 0.75H3.65479C1.87171 0.75 1.19114 1.43057 0.946136 3.20004L0.762383 5.0716C0.626269 6.43954 1.63351 7.55566 3.00825 7.55566Z"
+                                stroke="url(#paint3_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M7.33624 10.9583C6.1997 10.9583 5.63483 11.5231 5.63483 12.6597V14.3611H9.03766V12.6597C9.03766 11.5231 8.47279 10.9583 7.33624 10.9583Z"
+                                stroke="url(#paint4_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_7075_367" x1="1.21695" y1="10.6931" x2="13.4467"
+                                    y2="10.6931" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#C51AE5" />
+                                    <stop offset="0.646" stop-color="#9542FF" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_7075_367" x1="5.28467" y1="4.15283" x2="9.38999"
+                                    y2="4.15283" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#C51AE5" />
+                                    <stop offset="0.646" stop-color="#9542FF" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_7075_367" x1="8.90147" y1="4.15283" x2="13.8887"
+                                    y2="4.15283" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#C51AE5" />
+                                    <stop offset="0.646" stop-color="#9542FF" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_7075_367" x1="0.750061" y1="4.15283" x2="5.73052"
+                                    y2="4.15283" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#C51AE5" />
+                                    <stop offset="0.646" stop-color="#9542FF" />
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_7075_367" x1="5.63483" y1="12.6597" x2="9.03766"
+                                    y2="12.6597" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#C51AE5" />
+                                    <stop offset="0.646" stop-color="#9542FF" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+
+                    </button>
+
+                    <!-- Volume Button -->
+                    <button class="p-[4px] flex items-center justify-center rounded-full
+                   bg-[#00000080] text-white
+                   hover:scale-105 transition">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7192_378)">
+                                <path
+                                    d="M8.66958 1.7875C8.63086 1.74878 8.58491 1.71808 8.53432 1.69712C8.48374 1.67617 8.42953 1.66539 8.37478 1.66539C8.32004 1.66539 8.26582 1.67617 8.21524 1.69712C8.16466 1.71808 8.11871 1.74878 8.07999 1.7875C8.04128 1.82621 8.01057 1.87217 7.98962 1.92275C7.96867 1.97333 7.95789 2.02754 7.95789 2.08229C7.95789 2.13704 7.96867 2.19125 7.98962 2.24183C8.01057 2.29241 8.04128 2.33837 8.07999 2.37708C8.77456 3.07329 9.16463 4.01657 9.16463 5C9.16463 5.98343 8.77456 6.9267 8.07999 7.62291C8.00181 7.7011 7.95789 7.80714 7.95789 7.91771C7.95789 8.02827 8.00181 8.13431 8.07999 8.2125C8.15818 8.29068 8.26422 8.3346 8.37478 8.3346C8.48535 8.3346 8.59139 8.29068 8.66958 8.2125C9.52032 7.35982 9.9981 6.2045 9.9981 5C9.9981 3.79549 9.52032 2.64018 8.66958 1.7875Z"
+                                    fill="white" />
+                                <path
+                                    d="M7.54167 3.03791C7.50296 2.99906 7.45697 2.96822 7.40634 2.94714C7.35571 2.92607 7.30142 2.91517 7.24657 2.91507C7.19173 2.91497 7.1374 2.92568 7.0867 2.94658C7.03599 2.96748 6.98989 2.99816 6.95105 3.03687C6.9122 3.07558 6.88135 3.12157 6.86027 3.1722C6.8392 3.22284 6.8283 3.27712 6.8282 3.33197C6.82811 3.38681 6.83881 3.44114 6.85971 3.49185C6.88061 3.54255 6.91129 3.58865 6.95 3.6275C7.31365 3.9917 7.51789 4.48533 7.51789 5C7.51789 5.51466 7.31365 6.00829 6.95 6.3725C6.91129 6.41135 6.88061 6.45744 6.85971 6.50815C6.83881 6.55885 6.82811 6.61318 6.8282 6.66802C6.8283 6.72287 6.8392 6.77716 6.86027 6.82779C6.88135 6.87842 6.9122 6.92441 6.95105 6.96312C7.02951 7.04131 7.13581 7.08512 7.24657 7.08492C7.30142 7.08483 7.35571 7.07393 7.40634 7.05285C7.45697 7.03177 7.50296 7.00093 7.54167 6.96208C8.06139 6.44135 8.35328 5.7357 8.35328 5C8.35328 4.26429 8.06139 3.55864 7.54167 3.03791Z"
+                                    fill="white" />
+                                <path
+                                    d="M5.75833 0.0833288C4.49138 0.321357 3.36445 1.03743 2.61083 2.08333H2.08333C1.53107 2.08421 1.00168 2.30399 0.611168 2.6945C0.220658 3.08501 0.000881508 3.6144 0 4.16666L0 5.83333C0.000881508 6.38559 0.220658 6.91498 0.611168 7.30549C1.00168 7.696 1.53107 7.91578 2.08333 7.91666H2.61083C3.3646 8.9624 4.49146 9.67843 5.75833 9.91666C5.78318 9.92152 5.80844 9.92389 5.83375 9.92375C5.94426 9.92375 6.05024 9.87985 6.12838 9.80171C6.20652 9.72357 6.25042 9.61759 6.25042 9.50708V0.494162C6.25057 0.432968 6.23724 0.372491 6.21138 0.31703C6.18552 0.261568 6.14776 0.212484 6.10079 0.173265C6.05381 0.134047 5.99878 0.105656 5.93959 0.0901125C5.8804 0.0745686 5.81852 0.0722525 5.75833 0.0833288ZM5.41667 8.97291C4.49766 8.67995 3.70745 8.07968 3.17875 7.27291C3.14097 7.2148 3.0893 7.16703 3.0284 7.13392C2.96751 7.10082 2.89931 7.08343 2.83 7.08333H2.08333C1.75181 7.08333 1.43387 6.95163 1.19945 6.71721C0.96503 6.48279 0.833333 6.16485 0.833333 5.83333V4.16666C0.833333 3.83514 0.96503 3.5172 1.19945 3.28278C1.43387 3.04836 1.75181 2.91666 2.08333 2.91666H2.83333C2.90257 2.91665 2.97071 2.89939 3.0316 2.86644C3.09249 2.83348 3.14421 2.78587 3.18208 2.72791C3.7097 1.92134 4.4987 1.32081 5.41667 1.02708V8.97291Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_7192_378">
+                                    <rect width="10" height="10" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- Stats -->
+            <div class="flex items-center justify-between text-xs px-[17px] pt-[17px] pb-[7px] gap-[12px]">
+                <div class="flex items-center gap-1.5">
+                    <span class="flex items-center gap-[2px] text-[#EBE2FD] text-[10px]">
+                        <button id="likeBtn" class="flex items-center gap-1 text-pink-400 hover:text-pink-500">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.5766 4.99439C22.0233 4.44081 21.3663 4.00167 20.6432 3.70206C19.9201 3.40245 19.1451 3.24825 18.3624 3.24825C17.5797 3.24825 16.8047 3.40245 16.0816 3.70206C15.3585 4.00167 14.7016 4.44081 14.1482 4.99439L12.9999 6.14272L11.8516 4.99439C10.7339 3.87672 9.21802 3.24882 7.63741 3.24882C6.05679 3.24882 4.54091 3.87672 3.42324 4.99439C2.30557 6.11206 1.67767 7.62794 1.67767 9.20856C1.67767 10.7892 2.30557 12.3051 3.42324 13.4227L4.57157 14.5711L12.9999 22.9994L21.4282 14.5711L22.5766 13.4227C23.1302 12.8694 23.5693 12.2124 23.8689 11.4894C24.1685 10.7663 24.3227 9.99125 24.3227 9.20856C24.3227 8.42586 24.1685 7.65084 23.8689 6.92775C23.5693 6.20467 23.1302 5.54771 22.5766 4.99439Z"
+                                    fill="#FF3040" stroke="#FF3040" stroke-width="1.58926" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <span id="likeCount" class="text-[10px] font-bold leading-[100%] font-noto-sans">19,993</span>
+                    </span>
+                    <span class="flex items-center gap-[2px] text-[#EBE2FD] text-[10px]">
+                        <button id="commentBtn" class="flex items-center gap-1 text-pink-400 hover:text-pink-500">
+                            <svg width="27" height="28" viewBox="0 0 27 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.8438 13.6389C23.8478 15.1787 23.488 16.6977 22.7938 18.0722C21.9706 19.7192 20.7051 21.1046 19.1391 22.073C17.5731 23.0415 15.7684 23.5548 13.9271 23.5555C12.3872 23.5595 10.8682 23.1998 9.49375 22.5055L2.84375 24.7222L5.06042 18.0722C4.36617 16.6977 4.0064 15.1787 4.01042 13.6389C4.01113 11.7976 4.52446 9.99286 5.49292 8.42684C6.46138 6.86083 7.84671 5.59536 9.49375 4.7722C10.8682 4.07795 12.3872 3.71819 13.9271 3.7222H14.5104C16.9422 3.85636 19.239 4.88276 20.9611 6.60487C22.6832 8.32698 23.7096 10.6238 23.8438 13.0555V13.6389Z"
+                                    fill="#53B903" stroke="#53B903" stroke-width="1.58926" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <span id="commentCount"
+                            class="text-[10px] font-bold leading-[100%] font-noto-sans">10,786</span>
+                    </span>
+                    <span class="flex items-center gap-[2px] text-[#EBE2FD] text-[10px]">
+                        <button id="shareBtn" class="flex items-center gap-1 text-pink-400 hover:text-pink-500">
+                            <svg width="25" height="20" viewBox="0 0 25 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.6878 1.15564C12.6878 0.26007 13.6067 -0.249842 14.3118 0.123563L14.4592 0.21728L14.582 0.3233L23.5287 9.16565C23.8999 9.53246 23.9711 10.0969 23.7425 10.5397L23.6427 10.6993L23.5289 10.8302L14.5822 19.6754C13.955 20.2955 12.9615 19.9652 12.7348 19.1823L12.6984 19.0078L12.6878 18.8432V14.6522L12.1752 14.6986C11.68 14.7518 11.1878 14.8294 10.6984 14.9314C7.64704 15.568 4.70399 17.1558 1.85537 19.7128C1.08062 20.4084 -0.118034 19.7508 0.00939018 18.7002C0.97676 10.7243 4.94779 6.23867 11.715 5.49516L12.241 5.44535L12.6878 5.41513V1.15564ZM14.6773 3.22208V7.28511L15.5803 13.7175C12.4495 13.9696 8.36987 13.1182 8.36987 13.1182C8.36987 13.1182 5.55378 12.2436 8.36987 10.1219C11.186 8.00026 8.83755 12.3835 11.9751 11.9197L11.9804 12.708L14.6773 12.4644V3.22208Z"
+                                    fill="#2B66FD" />
+                            </svg>
+                        </button>
+                        <span id="shareCount" class="text-[10px] font-bold leading-[100%] font-noto-sans">12,012</span>
+                    </span>
+                    <span class="flex items-center gap-[2px] text-[#EBE2FD] text-[10px]">
+                        <button id="bookmarkBtn" class="flex items-center gap-1 text-pink-400 hover:text-pink-500">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.263 22.7432L13.6797 17.3266L6.09634 22.7432V5.40988C6.09634 4.83525 6.32461 4.28415 6.73094 3.87782C7.13727 3.47149 7.68837 3.24322 8.26301 3.24322H19.0963C19.671 3.24322 20.2221 3.47149 20.6284 3.87782C21.0347 4.28415 21.263 4.83525 21.263 5.40988V22.7432Z"
+                                    fill="#F2CC04" stroke="#F2CC04" stroke-width="1.58926" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <span id="bookmarkCount"
+                            class="text-[10px] font-bold leading-[100%] font-noto-sans">30,391</span>
+                    </span>
+
+                </div>
+                <button
+                    class="flex items-center gap-[3px] bg-[#EBE2FD] font-bold rounded-full text-xs hover:bg-purple-700 text-[#190829] h-[34px] w-[76px]">
                     <img src="https://i.pravatar.cc/40?img=32"
-                        class="w-[25.26px] h-[25.26px] rounded-full border-[1.18px] border-transparent">
-                </span>
+                        class="w-[31px] h-[31px] border-2 rounded-full border-transparent">
+                    <span class="text-[14px] text-[#190829] font-bold">DM</span>
+                </button>
+            </div>
 
-                <p class="text-[14px] font-bold flex items-center gap-[2px] font-noto-sans text-white">
-                    Jess Baker
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="15" height="15" rx="7.5" fill="white" />
-                        <path
-                            d="M8.18652 6.14355L8.27441 6.43359L8.57812 6.42773L10.9443 6.37988L9.00195 7.73438L8.75391 7.90723L8.85254 8.19336L9.62793 10.4297L7.74121 9.00098L7.5 8.81836L7.25879 9.00098L5.37109 10.4297L6.14746 8.19336L6.24609 7.90723L5.99805 7.73438L4.05469 6.37988L6.42188 6.42773L6.72559 6.43359L6.81348 6.14355L7.5 3.87891L8.18652 6.14355Z"
-                            stroke="#210A38" stroke-width="0.8" />
-                    </svg>
-
+            <!-- Description -->
+            <div
+                class=" ml-[9.5px] mr-[8.5px] mb-[11px]  border border-[#9643FF33] bg-[#3C0A6C] rounded-[20px] px-[12.5px] pt-[11px] pb-[4px] text-white">
+                <h4 class="text-sm font-extrabold text-[#EBE2FD] mb-[5px] uppercase leading-[133%]">
+                    DEEP FACIAL CLEANSE
+                </h4>
+                <p class="text-sm font-medium text-[#BE95E5] leading-[133%]">
+                    Hi I have discovered this amazing product.
+                    It does wonders for your skin. I use it everyday.
                 </p>
             </div>
 
-            <!-- Right -->
-            <div class="flex items-center gap-[6px] relative">
-                <!-- Follow Button -->
-                <button class="text-[10.83px] rounded-[9px] border border-white font-hind
-                   w-[53px] h-[21px] leading-[21px] text-center">
-                    Follow
-                </button>
-
-                <!-- 3 Dots Button -->
-                <button onclick="toggleMenu(this)" class="w-8 h-8 flex items-center justify-center rounded-full
-                   ">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.74089 9.53556C8.74089 9.97443 9.09666 10.3302 9.53552 10.3302C9.97438 10.3302 10.3301 9.97443 10.3301 9.53556C10.3301 9.0967 9.97438 8.74094 9.53552 8.74094C9.09666 8.74094 8.74089 9.0967 8.74089 9.53556Z"
-                            stroke="white" stroke-width="1.58926" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M8.74089 15.098C8.74089 15.5368 9.09666 15.8926 9.53552 15.8926C9.97438 15.8926 10.3301 15.5368 10.3301 15.098C10.3301 14.6591 9.97438 14.3033 9.53552 14.3033C9.09666 14.3033 8.74089 14.6591 8.74089 15.098Z"
-                            stroke="white" stroke-width="1.58926" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M8.74089 3.97316C8.74089 4.41202 9.09666 4.76778 9.53552 4.76778C9.97438 4.76778 10.3301 4.41202 10.3301 3.97316C10.3301 3.5343 9.97438 3.17853 9.53552 3.17853C9.09666 3.17853 8.74089 3.5343 8.74089 3.97316Z"
-                            stroke="white" stroke-width="1.58926" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                </button>
-
-                <!-- Dropdown -->
-                <div class="hidden absolute right-0 top-10 w-40 rounded-xl bg-[#320D56]
-                   border border-white/20 shadow-lg overflow-hidden dropdown-menu">
-
-                    <button class="w-full text-left px-4 py-2 text-sm hover:bg-white/10">
-                        Report
-                    </button>
-
-                    <button class="w-full text-left px-4 py-2 text-sm hover:bg-white/10">
-                        Block User
-                    </button>
-
-                    <button class="w-full text-left px-4 py-2 text-sm text-red-400 hover:bg-white/10">
-                        Remove
-                    </button>
-                </div>
-            </div>
         </div>
-
-
-        <!-- Video -->
-        <div class="relative rounded-[30px] overflow-hidden">
-            <!-- Video -->
-            <video id="customVideo" class="w-full h-[382px] object-cover hidden" controls>
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                Your browser does not support HTML video.
-            </video>
-
-            <!-- Thumbnail Image -->
-            <img id="videoThumbnail" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
-                class="w-full h-[382px] object-cover">
-
-            <!-- Play Button -->
-            <div id="playBtnWrapper" class="absolute inset-0 flex items-center justify-center cursor-pointer">
-                <div class="w-14 h-14 bg-white/30 backdrop-blur rounded-full flex items-center justify-center">
-                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="54" height="54" rx="27" stroke="white" />
-                        <path
-                            d="M41.2028 23.9884L34.3767 19.4023L23.254 11.9297C20.8978 10.37 16.8783 11.4874 16.8783 13.7222V28.2252V41.2849C16.8783 43.5197 20.8978 44.6371 23.254 43.0542L41.2028 30.9955C44.0788 29.0866 44.0788 25.9206 41.2028 23.9884Z"
-                            fill="white" />
-                    </svg>
-                </div>
-            </div>
-            <div class="absolute bottom-3 left-0 w-full px-4 flex items-center justify-between z-10">
-
-                <!-- Market / Shop Button -->
-                <button class="w-9 h-9 flex items-center justify-center rounded-full
-               bg-[#ebf2ff33] 
-               hover:scale-105 transition">
-                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1.21695 7.02486V10.0806C1.21695 13.1363 2.44197 14.3614 5.49771 14.3614H9.16597C12.2217 14.3614 13.4467 13.1363 13.4467 10.0806V7.02486"
-                            stroke="url(#paint0_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path
-                            d="M7.33733 7.55566C8.58276 7.55566 9.50153 6.54162 9.37903 5.29618L8.92985 0.75H5.75161L5.29563 5.29618C5.17313 6.54162 6.09189 7.55566 7.33733 7.55566Z"
-                            stroke="url(#paint1_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path
-                            d="M11.6305 7.55566C13.0053 7.55566 14.0125 6.43954 13.8764 5.0716L13.6859 3.20004C13.4409 1.43057 12.7603 0.75 10.9772 0.75H8.90147L9.37787 5.52077C9.49357 6.64371 10.5076 7.55566 11.6305 7.55566Z"
-                            stroke="url(#paint2_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path
-                            d="M3.00825 7.55566C4.13119 7.55566 5.14523 6.64371 5.25412 5.52077L5.40385 4.01672L5.73052 0.75H3.65479C1.87171 0.75 1.19114 1.43057 0.946136 3.20004L0.762383 5.0716C0.626269 6.43954 1.63351 7.55566 3.00825 7.55566Z"
-                            stroke="url(#paint3_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path
-                            d="M7.33624 10.9583C6.1997 10.9583 5.63483 11.5231 5.63483 12.6597V14.3611H9.03766V12.6597C9.03766 11.5231 8.47279 10.9583 7.33624 10.9583Z"
-                            stroke="url(#paint4_linear_7075_367)" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <defs>
-                            <linearGradient id="paint0_linear_7075_367" x1="1.21695" y1="10.6931" x2="13.4467"
-                                y2="10.6931" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#C51AE5" />
-                                <stop offset="0.646" stop-color="#9542FF" />
-                            </linearGradient>
-                            <linearGradient id="paint1_linear_7075_367" x1="5.28467" y1="4.15283" x2="9.38999"
-                                y2="4.15283" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#C51AE5" />
-                                <stop offset="0.646" stop-color="#9542FF" />
-                            </linearGradient>
-                            <linearGradient id="paint2_linear_7075_367" x1="8.90147" y1="4.15283" x2="13.8887"
-                                y2="4.15283" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#C51AE5" />
-                                <stop offset="0.646" stop-color="#9542FF" />
-                            </linearGradient>
-                            <linearGradient id="paint3_linear_7075_367" x1="0.750061" y1="4.15283" x2="5.73052"
-                                y2="4.15283" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#C51AE5" />
-                                <stop offset="0.646" stop-color="#9542FF" />
-                            </linearGradient>
-                            <linearGradient id="paint4_linear_7075_367" x1="5.63483" y1="12.6597" x2="9.03766"
-                                y2="12.6597" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#C51AE5" />
-                                <stop offset="0.646" stop-color="#9542FF" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-
-
-                </button>
-
-                <!-- Volume Button -->
-                <button class="p-[4px] flex items-center justify-center rounded-full
-               bg-[#00000080] text-white
-               hover:scale-105 transition">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_7192_378)">
-                            <path
-                                d="M8.66958 1.7875C8.63086 1.74878 8.58491 1.71808 8.53432 1.69712C8.48374 1.67617 8.42953 1.66539 8.37478 1.66539C8.32004 1.66539 8.26582 1.67617 8.21524 1.69712C8.16466 1.71808 8.11871 1.74878 8.07999 1.7875C8.04128 1.82621 8.01057 1.87217 7.98962 1.92275C7.96867 1.97333 7.95789 2.02754 7.95789 2.08229C7.95789 2.13704 7.96867 2.19125 7.98962 2.24183C8.01057 2.29241 8.04128 2.33837 8.07999 2.37708C8.77456 3.07329 9.16463 4.01657 9.16463 5C9.16463 5.98343 8.77456 6.9267 8.07999 7.62291C8.00181 7.7011 7.95789 7.80714 7.95789 7.91771C7.95789 8.02827 8.00181 8.13431 8.07999 8.2125C8.15818 8.29068 8.26422 8.3346 8.37478 8.3346C8.48535 8.3346 8.59139 8.29068 8.66958 8.2125C9.52032 7.35982 9.9981 6.2045 9.9981 5C9.9981 3.79549 9.52032 2.64018 8.66958 1.7875Z"
-                                fill="white" />
-                            <path
-                                d="M7.54167 3.03791C7.50296 2.99906 7.45697 2.96822 7.40634 2.94714C7.35571 2.92607 7.30142 2.91517 7.24657 2.91507C7.19173 2.91497 7.1374 2.92568 7.0867 2.94658C7.03599 2.96748 6.98989 2.99816 6.95105 3.03687C6.9122 3.07558 6.88135 3.12157 6.86027 3.1722C6.8392 3.22284 6.8283 3.27712 6.8282 3.33197C6.82811 3.38681 6.83881 3.44114 6.85971 3.49185C6.88061 3.54255 6.91129 3.58865 6.95 3.6275C7.31365 3.9917 7.51789 4.48533 7.51789 5C7.51789 5.51466 7.31365 6.00829 6.95 6.3725C6.91129 6.41135 6.88061 6.45744 6.85971 6.50815C6.83881 6.55885 6.82811 6.61318 6.8282 6.66802C6.8283 6.72287 6.8392 6.77716 6.86027 6.82779C6.88135 6.87842 6.9122 6.92441 6.95105 6.96312C7.02951 7.04131 7.13581 7.08512 7.24657 7.08492C7.30142 7.08483 7.35571 7.07393 7.40634 7.05285C7.45697 7.03177 7.50296 7.00093 7.54167 6.96208C8.06139 6.44135 8.35328 5.7357 8.35328 5C8.35328 4.26429 8.06139 3.55864 7.54167 3.03791Z"
-                                fill="white" />
-                            <path
-                                d="M5.75833 0.0833288C4.49138 0.321357 3.36445 1.03743 2.61083 2.08333H2.08333C1.53107 2.08421 1.00168 2.30399 0.611168 2.6945C0.220658 3.08501 0.000881508 3.6144 0 4.16666L0 5.83333C0.000881508 6.38559 0.220658 6.91498 0.611168 7.30549C1.00168 7.696 1.53107 7.91578 2.08333 7.91666H2.61083C3.3646 8.9624 4.49146 9.67843 5.75833 9.91666C5.78318 9.92152 5.80844 9.92389 5.83375 9.92375C5.94426 9.92375 6.05024 9.87985 6.12838 9.80171C6.20652 9.72357 6.25042 9.61759 6.25042 9.50708V0.494162C6.25057 0.432968 6.23724 0.372491 6.21138 0.31703C6.18552 0.261568 6.14776 0.212484 6.10079 0.173265C6.05381 0.134047 5.99878 0.105656 5.93959 0.0901125C5.8804 0.0745686 5.81852 0.0722525 5.75833 0.0833288ZM5.41667 8.97291C4.49766 8.67995 3.70745 8.07968 3.17875 7.27291C3.14097 7.2148 3.0893 7.16703 3.0284 7.13392C2.96751 7.10082 2.89931 7.08343 2.83 7.08333H2.08333C1.75181 7.08333 1.43387 6.95163 1.19945 6.71721C0.96503 6.48279 0.833333 6.16485 0.833333 5.83333V4.16666C0.833333 3.83514 0.96503 3.5172 1.19945 3.28278C1.43387 3.04836 1.75181 2.91666 2.08333 2.91666H2.83333C2.90257 2.91665 2.97071 2.89939 3.0316 2.86644C3.09249 2.83348 3.14421 2.78587 3.18208 2.72791C3.7097 1.92134 4.4987 1.32081 5.41667 1.02708V8.97291Z"
-                                fill="white" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_7192_378">
-                                <rect width="10" height="10" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-
-                </button>
-
-            </div>
-        </div>
-
-
-        <!-- Stats -->
-        <div class="flex items-center justify-between text-xs px-[17px] pt-[17px] pb-[7px] gap-[12px]">
-            <div class="flex items-center gap-1.5">
-                <span class="flex items-center gap-[2px] text-[#EBE2FD] text-[10px]">
-                    <button id="likeBtn" class="flex items-center gap-1 text-pink-400 hover:text-pink-500">
-                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M22.5766 4.99439C22.0233 4.44081 21.3663 4.00167 20.6432 3.70206C19.9201 3.40245 19.1451 3.24825 18.3624 3.24825C17.5797 3.24825 16.8047 3.40245 16.0816 3.70206C15.3585 4.00167 14.7016 4.44081 14.1482 4.99439L12.9999 6.14272L11.8516 4.99439C10.7339 3.87672 9.21802 3.24882 7.63741 3.24882C6.05679 3.24882 4.54091 3.87672 3.42324 4.99439C2.30557 6.11206 1.67767 7.62794 1.67767 9.20856C1.67767 10.7892 2.30557 12.3051 3.42324 13.4227L4.57157 14.5711L12.9999 22.9994L21.4282 14.5711L22.5766 13.4227C23.1302 12.8694 23.5693 12.2124 23.8689 11.4894C24.1685 10.7663 24.3227 9.99125 24.3227 9.20856C24.3227 8.42586 24.1685 7.65084 23.8689 6.92775C23.5693 6.20467 23.1302 5.54771 22.5766 4.99439Z"
-                                fill="#FF3040" stroke="#FF3040" stroke-width="1.58926" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    <span id="likeCount" class="text-[10px] font-bold leading-[100%] font-noto-sans">19,993</span>
-                </span>
-                <span class="flex items-center gap-[2px] text-[#EBE2FD] text-[10px]">
-                    <button id="commentBtn" class="flex items-center gap-1 text-pink-400 hover:text-pink-500">
-                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M23.8438 13.6389C23.8478 15.1787 23.488 16.6977 22.7938 18.0722C21.9706 19.7192 20.7051 21.1046 19.1391 22.073C17.5731 23.0415 15.7684 23.5548 13.9271 23.5555C12.3872 23.5595 10.8682 23.1998 9.49375 22.5055L2.84375 24.7222L5.06042 18.0722C4.36617 16.6977 4.0064 15.1787 4.01042 13.6389C4.01113 11.7976 4.52446 9.99286 5.49292 8.42684C6.46138 6.86083 7.84671 5.59536 9.49375 4.7722C10.8682 4.07795 12.3872 3.71819 13.9271 3.7222H14.5104C16.9422 3.85636 19.239 4.88276 20.9611 6.60487C22.6832 8.32698 23.7096 10.6238 23.8438 13.0555V13.6389Z"
-                                fill="#53B903" stroke="#53B903" stroke-width="1.58926" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    <span id="commentCount" class="text-[10px] font-bold leading-[100%] font-noto-sans">10,786</span>
-                </span>
-                <span class="flex items-center gap-[2px] text-[#EBE2FD] text-[10px]">
-                    <button id="shareBtn" class="flex items-center gap-1 text-pink-400 hover:text-pink-500">
-                        <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.6878 1.15564C12.6878 0.26007 13.6067 -0.249842 14.3118 0.123563L14.4592 0.21728L14.582 0.3233L23.5287 9.16565C23.8999 9.53246 23.9711 10.0969 23.7425 10.5397L23.6427 10.6993L23.5289 10.8302L14.5822 19.6754C13.955 20.2955 12.9615 19.9652 12.7348 19.1823L12.6984 19.0078L12.6878 18.8432V14.6522L12.1752 14.6986C11.68 14.7518 11.1878 14.8294 10.6984 14.9314C7.64704 15.568 4.70399 17.1558 1.85537 19.7128C1.08062 20.4084 -0.118034 19.7508 0.00939018 18.7002C0.97676 10.7243 4.94779 6.23867 11.715 5.49516L12.241 5.44535L12.6878 5.41513V1.15564ZM14.6773 3.22208V7.28511L15.5803 13.7175C12.4495 13.9696 8.36987 13.1182 8.36987 13.1182C8.36987 13.1182 5.55378 12.2436 8.36987 10.1219C11.186 8.00026 8.83755 12.3835 11.9751 11.9197L11.9804 12.708L14.6773 12.4644V3.22208Z"
-                                fill="#2B66FD" />
-                        </svg>
-                    </button>
-                    <span id="shareCount" class="text-[10px] font-bold leading-[100%] font-noto-sans">12,012</span>
-                </span>
-                <span class="flex items-center gap-[2px] text-[#EBE2FD] text-[10px]">
-                    <button id="bookmarkBtn" class="flex items-center gap-1 text-pink-400 hover:text-pink-500">
-                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M21.263 22.7432L13.6797 17.3266L6.09634 22.7432V5.40988C6.09634 4.83525 6.32461 4.28415 6.73094 3.87782C7.13727 3.47149 7.68837 3.24322 8.26301 3.24322H19.0963C19.671 3.24322 20.2221 3.47149 20.6284 3.87782C21.0347 4.28415 21.263 4.83525 21.263 5.40988V22.7432Z"
-                                fill="#F2CC04" stroke="#F2CC04" stroke-width="1.58926" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    <span id="bookmarkCount" class="text-[10px] font-bold leading-[100%] font-noto-sans">30,391</span>
-                </span>
-
-            </div>
-            <button
-                class="flex items-center gap-[3px] bg-[#EBE2FD] font-bold rounded-full text-xs hover:bg-purple-700 text-[#190829] h-[34px] w-[76px]">
-                <img src="https://i.pravatar.cc/40?img=32"
-                    class="w-[31px] h-[31px] border-2 rounded-full border-transparent">
-                <span class="text-[14px] text-[#190829] font-bold">DM</span>
-            </button>
-        </div>
-
-        <!-- Description -->
-        <div
-            class=" ml-[9.5px] mr-[8.5px] mb-[11px]  border border-[#9643FF33] bg-[#3C0A6C] rounded-[20px] px-[12.5px] pt-[11px] pb-[4px] text-white">
-            <h4 class="text-sm font-extrabold text-[#EBE2FD] mb-[5px] uppercase leading-[133%]">
-                DEEP FACIAL CLEANSE
-            </h4>
-            <p class="text-sm font-medium text-[#BE95E5] leading-[133%]">
-                Hi I have discovered this amazing product.
-                It does wonders for your skin. I use it everyday.
-            </p>
-        </div>
-
     </div>
 
 
