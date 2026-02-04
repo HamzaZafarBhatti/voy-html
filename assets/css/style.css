@@ -1,89 +1,89 @@
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-  @font-face {
-      font-family: 'Gotham Pro';
-      src: url('font/GothamProBold.eot');
-      src: url('font/GothamProBold.eot?#iefix') format('embedded-opentype'),
-          url('font/GothamProBold.woff') format('woff'),
-          url('font/GothamProBold.ttf') format('truetype');
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("font/GothamProBold.eot");
+  src:
+    url("font/GothamProBold.eot?#iefix") format("embedded-opentype"),
+    url("font/GothamProBold.woff") format("woff"),
+    url("font/GothamProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
+* {
+  font-family: "Poppins", sans-serif;
+}
 
-  * {
-      font-family: 'Poppins', sans-serif;
-  }
-
-  .font-gotham-pro {
-      font-family: 'Gotham Pro', sans-serif;
-  }
-  .font-noto-sans {
-    font-family: "Noto Sans", sans-serif;
-  }
-  .font-hind {
-   font-family: "Hind", sans-serif;
-  }
-.font-inter  {
+.font-gotham-pro {
+  font-family: "Gotham Pro", sans-serif;
+}
+.font-noto-sans {
+  font-family: "Noto Sans", sans-serif;
+}
+.font-hind {
+  font-family: "Hind", sans-serif;
+}
+.font-inter {
   font-family: "Inter", sans-serif;
 }
 
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-      width: 5px;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
 
-  ::-webkit-scrollbar-track {
-      background: #f1f1f1;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  ::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 5px;
-  }
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-  }
+/* Staggered animation for creator cards */
+.creator-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
 
-  /* Animation for cards */
-  @keyframes fadeInUp {
-      from {
-          opacity: 0;
-          transform: translateY(20px);
-      }
+.creator-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
 
-      to {
-          opacity: 1;
-          transform: translateY(0);
-      }
-  }
+.creator-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
 
-  .fade-in-up {
-      animation: fadeInUp 0.5s ease-out forwards;
-  }
+.creator-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
-  /* Staggered animation for creator cards */
-  .creator-card:nth-child(1) {
-      animation-delay: 0.1s;
-  }
-
-  .creator-card:nth-child(2) {
-      animation-delay: 0.2s;
-  }
-
-  .creator-card:nth-child(3) {
-      animation-delay: 0.3s;
-  }
-
-  .creator-card:nth-child(4) {
-      animation-delay: 0.4s;
-  }
-
-  .creator-card:nth-child(5) {
-      animation-delay: 0.5s;
-  }
+.creator-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -94,68 +94,70 @@
 }
 
 body {
-  -ms-overflow-style:none;
+  -ms-overflow-style: none;
 }
 *::-webkit-scrollbar {
   display: none;
 }
 
 * {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-.shadow-hero{
-    box-shadow: 0px 0px 10px 0px #00000080 inset;
+.shadow-hero {
+  box-shadow: 0px 0px 10px 0px #00000080 inset;
 }
-.text-bg-linner{
-        background: linear-gradient(180.43deg, rgba(0, 0, 0, 0) 0.37%, rgba(0, 0, 0, 0.9) 50%);
+.text-bg-linner {
+  background: linear-gradient(
+    180.43deg,
+    rgba(0, 0, 0, 0) 0.37%,
+    rgba(0, 0, 0, 0.9) 50%
+  );
 }
-.shadow-engagement{
-   background-color: #014923;
-      box-shadow: inset 0px 0px 7.2px 0px rgba(4, 142, 68, 1);
-
+.shadow-engagement {
+  background-color: #014923;
+  box-shadow: inset 0px 0px 7.2px 0px rgb(61, 173, 113);
 }
-.shadow-visibility{
-    /* box-shadow: 0px 0px 7.2px 0px #048E44 inset; */
-    background-color: #FF5F17;
-      box-shadow: inset 0px 0px 7.2px 0px #FFB08D;
+.shadow-visibility {
+  /* box-shadow: 0px 0px 7.2px 0px #048E44 inset; */
+  background-color: #ff5f17;
+  box-shadow: inset 0px 0px 7.2px 0px #fed9b6;
 }
-.shadow-shopping{
-    background-color: #3A185A;
-      box-shadow: inset 0px 0px 7.2px 0px #9450D3;
+.shadow-shopping {
+  background-color: #3a185a;
+  box-shadow: inset 0px 0px 7.2px 0px #9450d3;
 }
-.shadow-redemptiont{
-     background-color: #0F294E;
-     box-shadow: inset 0px 0px 7.2px 0px #0C5CCC;
+.shadow-redemptiont {
+  background-color: #0f294e;
+  box-shadow: inset 0px 0px 7.2px 0px #0c5ccc;
 }
-.feature-card-shadow{
-    box-shadow: 0px 0px 9px 0px #0C5CCC inset;
-
+.feature-card-shadow {
+  box-shadow: 0px 0px 7.2px 0px #9450d3 inset;
 }
-.select-wallet{
-    border: 1px solid #9643FF33
+.select-wallet {
+  border: 1px solid #9643ff33;
 }
-.video-section{
-    border-bottom: 1.5px solid;
-border-image-source: linear-gradient(90deg, #D97DCC 0%, #9542FF 64.6%);
+.video-section {
+  border-bottom: 1.5px solid;
+  border-image-source: linear-gradient(90deg, #d97dcc 0%, #9542ff 64.6%);
 }
-.user-status::after{
-    content: '';
-    background-color: white;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    position: absolute;
-    right: 1px;
-    top: 22px;
+.user-status::after {
+  content: "";
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  position: absolute;
+  right: 0px;
+  top: 22px;
 }
-.user-status-2::after{
-    content: '';
-    background-color: white;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    position: absolute;
-    right: 0px;
-    top: 4px;
+.user-status-2::after {
+  content: "";
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  position: absolute;
+  right: -2px;
+  top: 4px;
 }
